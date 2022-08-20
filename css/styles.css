@@ -1,0 +1,85 @@
+:root{
+    --primary: #6f03fc;
+    --secundary: #1f1f1f;
+    --text-color: #fff;
+    --text-secundary: #000;
+    --text-tertiary: #545454;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event form */
+#event-description{
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), 
+    url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer .event-date{
+    color: var(--primary);
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+#subscription-form{
+    background-color: var(--secundary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--text-tertiary);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.form-group label{
+    color: var(--primary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+}
